@@ -9,7 +9,6 @@ export default function Home() {
       <header>
         <h1 className="text-center bg-white text-black p-2">Anciens Meubles pour une Nouvelle Vie</h1>
       </header>
-      {/* Ajouter un lien vers la nouvelle page */}
       <Link href="/NewPage">
         Voir la nouvelle page
       </Link>
