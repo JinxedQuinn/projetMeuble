@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-export default function MyComponent() {
+export default function Header() {
   return (
     <header>
-        <h1 className="text-center bg-white text-black p-2">Anciens Meubles pour une Nouvelle Vie</h1>
+        <h1 className="text-center bg-black text-white p-2">Anciens Meubles pour une Nouvelle Vie</h1>
     </header>
   )
 }

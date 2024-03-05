@@ -3,7 +3,7 @@
     "paths": {
       "@/*": ["./*"],
       "@/pages/NewPage": ["./*"],
-      "@/pages/page": ["./app/pages/page.js"] // Add the correct file path here
+      "@/pages/page": ["./app/page.js"] // Add the correct file path here
     }
   }
 }
