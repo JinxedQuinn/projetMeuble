@@ -13,3 +13,14 @@ export default function Navbar() {
         </nav>
     )
 }
+
+
+function SearchBar(){
+    return (<>
+    <div className="input-wrapper">
+        <input placeholder="type to search..." />
+
+    </div>
+    </>
+    )
+}
