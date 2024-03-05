@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/pages/NewPage": ["./*"],
+      "@/pages/page": ["./app/pages/page.js"] // Add the correct file path here
     }
   }
 }
