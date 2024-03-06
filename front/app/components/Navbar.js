@@ -8,19 +8,9 @@ export default function Navbar() {
                 <li><Link href="/about">A Propos</Link></li>
                 <li><Link href="/about">A Propos</Link></li>
                 <li><Link href="/about">A Propos</Link></li>
+                <input className="input-wrapper" placeholder="Rechercher..." />
                 <li><Link href="/about">Connexion</Link></li>
             </ul>
         </nav>
-    )
-}
-
-
-function SearchBar(){
-    return (<>
-    <div className="input-wrapper">
-        <input placeholder="type to search..." />
-
-    </div>
-    </>
     )
 }
