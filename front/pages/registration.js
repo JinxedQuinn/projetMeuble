@@ -1,18 +1,18 @@
 import React from 'react';
-import Header from '../app/components/Header'
+import Header from '../app/components/Header';
+import Navbar from '../app/components/Navbar';
 import Form from '../app/components/Form';
-
-
+import '../app/globals.css';
 
 function registration() {
-    return (<>
-       <Header />
-        <div>
-            <Form />
-            <h1>A Propos</h1>
-            <p>Lorem Ipsum...</p>
-        </div>
-    </>)
+    return (
+        <>
+            <Header />
+            <Navbar />
+            <div>
+                <Form />
+            </div>
+        </>)
 }
 
 export default registration;
