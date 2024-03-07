@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Form() {
     return (
-        <div className="p-2 m-2">
+        <div className="p-2 m-2 border border-blue-700">
             <form className="">
                 <input type="text" placeholder="Entrez votre Nom" />
                 <input type="text" placeholder="Entrez votr Prénom" />
