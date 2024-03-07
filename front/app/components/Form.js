@@ -1,3 +1,5 @@
+import React from "react"
+
 export default function Form() {
     return (
         <div className="border border-lime-500 p-2 m-2">
