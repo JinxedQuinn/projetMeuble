@@ -5,10 +5,8 @@ export default function Navbar() {
         <nav>
             <ul className='flex justify-between p-2 bg-gray-300'>
                 <li><Link href="/about">Accueil</Link></li>
-                <li><Link href="/about">A Propos</Link></li>
-                <li><Link href="/about">A Propos</Link></li>
-                <li><Link href="/about">A Propos</Link></li>
                 <input className="input-wrapper" placeholder="Rechercher..." />
+                <li><Link href="/registration">Inscription</Link></li>
                 <li><Link href="/about">Connexion</Link></li>
             </ul>
         </nav>
