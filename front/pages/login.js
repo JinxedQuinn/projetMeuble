@@ -1,8 +1,8 @@
 import React from "react"
-import Header from '../app/components/Header.js'
+import Header from '../app/components/Header'
 
 export default function login(){
     return(
-        <header />
+        <Header />
     )
 }

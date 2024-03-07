@@ -15,19 +15,29 @@ export default function Footer() {
             </div>
             <div className='flex'>
                 <div>
-                    <img src="/facebook.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Canapé SVG" />
+                    <a href="https://www.facebook.com/ikea" target="_blank" rel="noopener noreferrer">
+                        <img src="/facebook.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Facebook" />
+                    </a>
                 </div>
                 <div>
-                    <img src="/instagram.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Canapé SVG" />
+                    <a href="https://www.instagram.com/ikea" target="_blank" rel="noopener noreferrer">
+                        <img src="/instagram.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Instagram" />
+                    </a>
                 </div>
                 <div>
-                    <img src="/pinterest.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Canapé SVG" />
+                    <a href="https://www.pinterest.com/ikea" target="_blank" rel="noopener noreferrer">
+                        <img src="/pinterest.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Pinterest" />
+                    </a>
                 </div>
                 <div>
-                    <img src="/twitter.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Canapé SVG" />
+                    <a href="https://twitter.com/ikea" target="_blank" rel="noopener noreferrer">
+                        <img src="/twitter.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Twitter" />
+                    </a>
                 </div>
                 <div>
-                    <img src="/youtube.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Canapé SVG" />
+                    <a href="https://www.youtube.com/user/IKEAUSA" target="_blank" rel="noopener noreferrer">
+                        <img src="/youtube.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Youtube" />
+                    </a>
                 </div>
             </div>
         </footer>

@@ -12,6 +12,6 @@ export default function Form() {
                 <button type="submit">S'inscrire</button>
             </form>
         </div>
-    
+
     )
 }
