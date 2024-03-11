@@ -7,7 +7,7 @@ export default function Navbar() {
                 <input className="input-wrapper" placeholder="Rechercher..." />
                 <li><Link href="/about">Accueil</Link></li>
                 <li><Link href="/registration">Inscription</Link></li>
-                <li><Link href="/about">Connexion</Link></li>
+                <li><Link href="/about">A Propos</Link></li>
             </ul>
         </nav>
     )
