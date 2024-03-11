@@ -23,7 +23,14 @@ function AboutPage() {
             <p>Les utilisateurs ont la possibilité de créer un compte en fournissant leur adresse e-mail et un mot de passe. Cela leur permet de spécifier les types de meubles qu'ils recherchent. La page principale s'adapte alors en fonction de leurs préférences, mettant en avant les meubles correspondant à leurs besoins en premier.</p>
         </div>
         <div>
-            <h
+            <h1>Proposition de Meubles à Vendre</h1>
+            <p>Les utilisateurs connectés ont également la possibilité de proposer des meubles à vendre. Ces propositions sont visibles uniquement par l'administrateur. Une fois soumises, vous pouvez les valider depuis la page de gestion des produits avant de les proposer à la vente sur le site. Un statut pour chaque meuble facilite la gestion de ces propositions.
+
+Chez "Anciens Meubles pour une Nouvelle Vie", nous croyons en la transformation des meubles anciens en trésors modernes. Explorez notre collection et trouvez le meuble parfait pour ajouter une touche d'histoire à votre chez-vous.
+
+Connectez-vous maintenant pour découvrir notre sélection exclusive !</p>
+
+
         </div>
     </>)
 }
