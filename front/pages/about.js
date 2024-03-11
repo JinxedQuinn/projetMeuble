@@ -19,7 +19,11 @@ function AboutPage() {
             <p>Pour la gestion de notre stock, nous disposons d'une page de connexion sécurisée pour les administrateurs. Une fois connecté, vous pouvez accéder à la page de gestion des produits où vous pouvez voir la liste complète de nos meubles. De là, vous avez la possibilité de modifier les informations des produits ou de les supprimer s'ils ont été vendus en magasin.</p>
         </div>
         <div>
-            <h1>
+            <h1>Création de Compte Utilisateur</h1>
+            <p>Les utilisateurs ont la possibilité de créer un compte en fournissant leur adresse e-mail et un mot de passe. Cela leur permet de spécifier les types de meubles qu'ils recherchent. La page principale s'adapte alors en fonction de leurs préférences, mettant en avant les meubles correspondant à leurs besoins en premier.</p>
+        </div>
+        <div>
+            <h
         </div>
     </>)
 }
