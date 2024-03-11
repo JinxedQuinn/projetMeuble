@@ -1,9 +1,4 @@
-## Backend 
-```bash
-npm install
-puis si il n'est pas installer faire la commande : npm install -g nodemon
-ouvrir le serveur suivre la commande suivante : npm run start ou npm start
-```
+
 ## frontEnd
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
