@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 export default function Inscription() {
     return (
@@ -17,10 +18,10 @@ export default function Inscription() {
 
                         <input class="pl-2 outline-none border-none" type="text" placeholder="Mot de Passe" />
                     </div>
-                    
+
                     <button type="submit"
                         class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Inscription</button>
-                    <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer underline">Pas de compte ? Inscrivez-vous !</span>
+                    <Link href="/registration"><span class="text-sm ml-2 hover:text-blue-500 cursor-pointer underline">Pas de compte ? Inscrivez-vous !</span></Link>
                 </form>
             </div>
         </div>
