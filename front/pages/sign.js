@@ -5,7 +5,7 @@ import Signup from '../app/components/Signup';
 import Footer from '../app/components/Footer';
 import '../app/globals.css';
 
-function registration() {
+function sign() {
     return (
         <>
             <Header />
@@ -15,4 +15,4 @@ function registration() {
         </>)
 }
 
-export default registration;
+export default sign;

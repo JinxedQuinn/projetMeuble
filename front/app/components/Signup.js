@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Registration() {
+export default function Signup() {
     return (
         <div class="flex justify-center py-10 items-center bg-gray-100">
             <div class="max-w-md bg-white p-8 rounded-lg shadow-lg">
