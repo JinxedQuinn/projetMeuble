@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../app/components/Header';
 import Navbar from '../app/components/Navbar';
-import Inscription from '../app/components/Login';
+import Signup from '../app/components/Signup';
 import Footer from '../app/components/Footer';
 import '../app/globals.css';
 
@@ -10,7 +10,7 @@ function registration() {
         <>
             <Header />
             <Navbar />
-            <Inscription />
+            <Signup />
             <Footer />
         </>)
 }
