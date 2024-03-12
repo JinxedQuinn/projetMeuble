@@ -36,9 +36,32 @@ const ProductsManagement = () => {
                 <ul className='border border-red-600'>         
                     {data &&
                         data.map(item => (
-                            <li key={item._id} className='border border-blue-600 m-2 text-center grid grid-cols-3 p-2'>
+                            <li key={item._id} className='border border-blue-600 m-2 text-center grid grid-cols-5 p-2'>
                                 <h2 className='font-bold'>{item.title}</h2>
-                                <p>{item.price} €</p>                     
+                                <p>{item.price} €</p>
+                                <p>Statut : En ligne / A valider</p>
+                                <div>
+                                    <button>
+                                        <Image
+                                            src="/edit-icon.png" 
+                                            alt="Icône Bouton Modifier"
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </button>
+                                    <p>Modifier</p>
+                                </div>
+                                <div> 
+                                    <button>
+                                        <Image
+                                            src="/delete-icon.png" 
+                                            alt="Icône Bouton Supprimer"
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </button>
+                                    <p>Supprimer</p>
+                                </div>
                             </li>
                         ))
                     }        
