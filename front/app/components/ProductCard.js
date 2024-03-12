@@ -52,12 +52,12 @@ const ProductCard = () => {
                 {data &&
                     data.map(item => (
                         <li key={item._id} className='border border-blue-600 m-2 text-center'>
-                            {/* <Image 
+                            <Image 
                               src={item.imageUrl} 
                               alt={item.title}
                               width={300}
                               height={300}
-                            /> */}
+                            />
                             <h2>{item.title}</h2>
                             <p>{item.price} €</p>
                             {/* <BuyButton />                         */}
