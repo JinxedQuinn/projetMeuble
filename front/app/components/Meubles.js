@@ -1,19 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import ProductCard from './ProductCard';
-// let URL = 'http://localhost:3000/api/stuff/65e9c6397c0612b5642acedf';
-
-// function getMeubles() {
-//     fetch(URL)
-//         .then(response => response.json())
-//         .then(data => console.log(data));
-// }
-
-
 
 export default function gridMeubles() {
     return (
-        <div className='grid grid-cols-3 gap-4 m-3'>
+        <div className='grid grid-cols-1 gap-4 m-3'>
             <Link href='/blank'>
                 <ProductCard />
                     {/* <div className='border border-red-600 grid grid-cols-2 p-2'>

@@ -48,17 +48,17 @@ const ProductCard = () => {
         {loading ? ( 
             <p>Chargement...</p>
         ) : (
-            <ul className='border border-red-600 grid grid-cols-3 p-2'>
+            <ul className='border border-red-600 grid grid-cols-3 p-2'>         
                 {data &&
                     data.map(item => (
                         <li key={item._id} className='border border-blue-600 m-2 text-center'>
                             <Image 
                               src={item.imageUrl} 
                               alt={item.title}
-                              width={300}
-                              height={300}
+                              width={200}
+                              height={200}
                             />
-                            <h2>{item.title}</h2>
+                            <h2 className='font-bold'>{item.title}</h2>
                             <p>{item.price} €</p>
                             <BuyButton />                     
                         </li>
