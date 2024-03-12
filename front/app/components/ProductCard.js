@@ -6,7 +6,7 @@
 import { useState, useEffect} from 'react'
 
 import Image from "next/image"
-// import BuyButton from "./BuyButton"
+import BuyButton from "./BuyButton"
 
 
 // On définit un composant fonctionnel nommé 'ProductCard'
@@ -60,7 +60,7 @@ const ProductCard = () => {
                             />
                             <h2>{item.title}</h2>
                             <p>{item.price} €</p>
-                            {/* <BuyButton />                         */}
+                            <BuyButton />                     
                         </li>
                     ))
                 }        

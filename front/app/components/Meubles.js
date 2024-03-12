@@ -24,9 +24,9 @@ export default function gridMeubles() {
                                     <p>100% Polyester</p>
                                 </div>
                             </div>
-                            <div className='pl-1 ml-1'>
+                        <div className='pl-1 ml-1'>
                                 <img src="/blahaj.png" alt="Blahaj" />
-                            </div> */}
+                     </div> */}
             </Link>
                 {/* <a className="inline-flex" href>
                     <span className="h-12 flex items-center justify-center uppercase font-semibold px-8 border border-black hover:bg-black hover:text-white transition duration-500 ease-in-out">Ajouter au panier</span>
