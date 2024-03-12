@@ -14,7 +14,7 @@ import ProductCard from './ProductCard';
 export default function gridMeubles() {
     return (
         <div className='grid grid-cols-3 gap-4 m-3'>
-            <Link href='about:blank'>
+            <Link href='/blank'>
                 <ProductCard />
                     {/* <div className='border border-red-600 grid grid-cols-2 p-2'>
                             <div>
