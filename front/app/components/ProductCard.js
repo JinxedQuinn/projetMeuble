@@ -4,6 +4,7 @@
 // - useState utilisé pour gérer l'état local d'un composant fonctionnel
 // - useEffect utilisé pour effectuer des opérations après le rendu initial du composant ou après chaque mise à jour (= lorsque le composant est monté)
 import { useState, useEffect} from 'react'
+import Link from 'next/link'
 
 import Image from "next/image"
 import BuyButton from "./BuyButton"
@@ -51,14 +52,14 @@ const ProductCard = () => {
             <ul className='border border-red-600 grid grid-cols-3 p-2'>         
                 {data &&
                     data.map(item => (
-                        <li key={item._id} className='border border-blue-600 m-2 text-center'>
-                            <Image 
+                       <li key={item._id} className='border border-blue-600 m-2 text-center'>
+                           <Link href='/blank'> <Image 
                               src={item.imageUrl} 
                               alt={item.title}
                               width={200}
                               height={200}
                             />
-                            <h2 className='font-bold'>{item.title}</h2>
+                            <h2 className='font-bold'>{item.title}</h2></Link>
                             <p>{item.price} €</p>
                             <BuyButton />                     
                         </li>

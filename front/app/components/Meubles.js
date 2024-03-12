@@ -5,7 +5,7 @@ import ProductCard from './ProductCard';
 export default function gridMeubles() {
     return (
         <div className='grid grid-cols-1 gap-4 m-3'>
-            <Link href='/blank'>
+         
                 <ProductCard />
                     {/* <div className='border border-red-600 grid grid-cols-2 p-2'>
                             <div>
@@ -18,7 +18,7 @@ export default function gridMeubles() {
                         <div className='pl-1 ml-1'>
                                 <img src="/blahaj.png" alt="Blahaj" />
                      </div> */}
-            </Link>
+ 
                 {/* <a className="inline-flex" href>
                     <span className="h-12 flex items-center justify-center uppercase font-semibold px-8 border border-black hover:bg-black hover:text-white transition duration-500 ease-in-out">Ajouter au panier</span>
                     <span className="h-12 w-12 flex-shrink-0 flex items-center justify-center border border-l-0 border-black hover:bg-black hover:text-white transition duration-500 ease-in-out">
