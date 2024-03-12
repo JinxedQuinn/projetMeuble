@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className="absolute bottom-0 w-full bg-blue-500 flex justify-between items-center">
+        <footer className="positve bottom-0 w-full bg-blue-500 flex justify-between items-center">
             <div className="flex items-center">
                 <img src="/canape.svg" className='w-7 inline-block m-2 text-white filter invert(100%)' alt="Canapé SVG" />
                 <p className='inline-block text-white'>AMPUNV</p>

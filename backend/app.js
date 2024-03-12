@@ -1,4 +1,4 @@
-const express = require('express');
+ const express = require('express');
 
 const mongoose = require('mongoose');
 
@@ -48,6 +48,7 @@ app.delete('/api/stuff/:id', (req, res, next) => {
     .then(() => res.status(200).json({ message: 'Objet supprimé !'}))
     .catch(error => res.status(400).json({ error }));
 });
+
 
 app.use('/api/stuff', (req, res, next) => {
   Thing.find()
