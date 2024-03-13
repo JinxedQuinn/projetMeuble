@@ -9,7 +9,7 @@
             return (
                 <div>
                     <h2 className='text-center'>Bienvenue sur notre site de vente de meubles d'occasion</h2>
-                    <p className='text-center'>Nombre de meubles actuellement disponibles : {data.length}</p>
+                    <p className='text-center'>Il y a actuellement {data.length} meubles en vente</p>
                     <div className='border border-red-600 grid grid-cols-3 m-5 p-2'>
                         {/* Afficher une ProductCard pour chaque produit : */}
                         {data.map((product) => (
