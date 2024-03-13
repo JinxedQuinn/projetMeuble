@@ -15,17 +15,28 @@ import BuyButton from './BuyButton';
 
 const ProductDetail = ({ product }) => {
     return (
-        <div>
-            <Image
-                src={product.imageUrl}
-                alt={product.title}
-                width={350}
-                height={350}
-            />
-            <h2>{product.title}</h2>
-            <p>{product.description}</p>
-            <p>{product.price} €</p>
-            <BuyButton />
+        <div className='grid grid-cols-2 m-30 p-20 text-center'>
+
+            {/* Colonne de gauche (image) */}
+            <div className="flex justify-center items-center m-5">
+                <Image
+                    src={product.imageUrl}
+                    alt={product.title}
+                    width={350}
+                    height={350}
+                    className="max-w-full max-h-full"
+                />
+            </div>
+
+            {/* Colonne de droite (informations du produit) */}
+            <div className="flex flex-col justify-center items-center">
+                <h2 className='font-bold mb-2 p-5'>{product.title}</h2>
+                <p className="flex justify-center items-center mb-2 p-10">{product.description}</p>
+                <p className="flex justify-center items-center mb-2 p-15">{product.price} €</p>
+                <div className="flex justify-center items-center mb-2 p-15">    
+                    <BuyButton />
+                </div>
+            </div>
         </div>
     );
 }
