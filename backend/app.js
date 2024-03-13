@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://julie:zrHaJAiVUtKGhnuO@cluster0.80ftkv3.mongodb.
     useUnifiedTopology: true
   })
   .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
+  .catch(() => console.log('Connexion à MongoDB échouée...'));
 
 app.use(express.json());
 
