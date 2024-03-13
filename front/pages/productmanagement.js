@@ -10,7 +10,7 @@ function management() {
         <>
             <Header />
             <Navbar />
-            <h2>Gestion des Produits</h2>
+            <h2 className='text-center m-2'>Gestion des Produits</h2>
             <ProductsManagement />
             <Footer />
         </>)
