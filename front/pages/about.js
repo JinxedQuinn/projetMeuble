@@ -38,7 +38,6 @@ function AboutPage() {
                     Connectez-vous maintenant pour découvrir notre sélection exclusive !</p>
             </div>
         </div>
-
         <Footer />
     </>)
 }

@@ -64,7 +64,7 @@ const Home = () => {
             <Navbar />
             <div>
                 {loading ? (
-                    <p className='text-center font-bold'>Chargement...</p>
+                    <p className='text-center font-bold m-60'>Chargement...</p>
                 ) : (
                     <div>
                         {/* Affiche le composant Meubles (grille de meubles) en lui passant les données récupérées de l'API ('data') en tant que prop */}

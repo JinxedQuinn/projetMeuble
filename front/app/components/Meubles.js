@@ -8,8 +8,8 @@ import ProductCard from './ProductCard';
 const Meubles = ({ data }) => {
     return (
         <div>
-            <h2 className='text-center'>Bienvenue sur notre site de vente de meubles d'occasion</h2>
-            <p className='text-center'>Il y a actuellement {data.length} meubles en vente</p>
+            <h2 className='font-bold text-center m-10'>Bienvenue sur notre site de vente de meubles d'occasion</h2>
+            <p className='text-center m-5'>Il y a actuellement {data.length} meubles en vente</p>
             <div className='grid grid-cols-3 m-5 p-2'>
                 {/* Afficher une ProductCard pour chaque produit : */}
                 {data.map((product) => (
