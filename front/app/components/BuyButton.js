@@ -3,10 +3,10 @@ import React from 'react'
 const BuyButton = () => {
   return (
     <>
-        <button type="submit" class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">
-            Ajouter au Panier
-        </button>
-        {/* BOUTON D'ORIGINE : 
+      <button type="submit" class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">
+        Ajouter au Panier
+      </button>
+      {/* BOUTON D'ORIGINE : 
            <a className="inline-flex" href>
            <span className="h-12 flex items-center justify-center uppercase font-semibold px-8 border border-black hover:bg-black hover:text-white transition duration-500 ease-in-out">Ajouter au panier</span>
            <span className="h-12 w-12 flex-shrink-0 flex items-center justify-center border border-l-0 border-black hover:bg-black hover:text-white transition duration-500 ease-in-out">

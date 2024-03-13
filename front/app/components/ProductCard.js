@@ -18,13 +18,13 @@ const ProductCard = ({ product }) => {
   return (
     <div className='m-5 p-4 text-center'>
       {/* Utilisation du composant Link pour créer un lien vers la page spécifique du produit en utilisant l'_id du produit dans l'URL : */}
-      <Link href={`/${product._id}`}>  
+      <Link href={`/${product._id}`}>
         <div>
-          <Image 
-            src={product.imageUrl} 
-            alt={product.title} 
-            width={220} 
-            height={220} 
+          <Image
+            src={product.imageUrl}
+            alt={product.title}
+            width={220}
+            height={220}
           />
           <h3 className='font-bold'>{product.title}</h3>
         </div>

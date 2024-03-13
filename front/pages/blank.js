@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../app/components/Header';
 import Navbar from '../app/components/Navbar';
 import Footer from '../app/components/Footer';
 import '../app/globals.css';
 
 
-function blank(){
-    
+function blank() {
+
     const [data, setData] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
@@ -20,9 +20,9 @@ function blank(){
         };
         fetchData();
     }, []);
-    
-    
-    
+
+
+
     return (
         <>
             <main>

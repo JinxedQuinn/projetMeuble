@@ -9,25 +9,25 @@
       6. les matières
       7. un bouton d'achat */
 
-      import React from 'react';
-      import Image from 'next/image';
-      import BuyButton from './BuyButton';
-      
-      const ProductDetail = ({ product }) => {
-          return (
-              <div>
-                  <Image 
-                    src={product.imageUrl} 
-                    alt={product.title} 
-                    width={350} 
-                    height={350} 
-                  />
-                  <h2>{product.title}</h2>
-                  <p>{product.description}</p>
-                  <p>{product.price} €</p>
-                  <BuyButton />
-              </div>
-          );
-      }
-      
-      export default ProductDetail;
+import React from 'react';
+import Image from 'next/image';
+import BuyButton from './BuyButton';
+
+const ProductDetail = ({ product }) => {
+    return (
+        <div>
+            <Image
+                src={product.imageUrl}
+                alt={product.title}
+                width={350}
+                height={350}
+            />
+            <h2>{product.title}</h2>
+            <p>{product.description}</p>
+            <p>{product.price} €</p>
+            <BuyButton />
+        </div>
+    );
+}
+
+export default ProductDetail;
