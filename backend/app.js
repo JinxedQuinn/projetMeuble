@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 // const Thing = require('./models/thing');
 const stuffRoutes = require('./routes/stuff');
+const userRoutes = require ('./routes/user');
 
 const app = express();
 
@@ -16,6 +17,7 @@ mongoose.connect('mongodb+srv://julie:zrHaJAiVUtKGhnuO@cluster0.80ftkv3.mongodb.
 app.use(express.json());
 
 app.use('/api/stuff', stuffRoutes);
+app.use('/api/auth', userRoutes);
 
 // app.use((req, res, next) => {
 //   res.setHeader('Access-Control-Allow-Origin', '*');
