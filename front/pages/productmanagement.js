@@ -5,7 +5,7 @@ import ProductsManagement from '../app/components/ProductsManagement';
 import Footer from '../app/components/Footer';
 import '../app/globals.css';
 
-function login() {
+function management() {
     return (
         <>
             <Header />
@@ -16,4 +16,4 @@ function login() {
         </>)
 }
 
-export default login;
+export default management;
