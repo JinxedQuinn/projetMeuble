@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
   // Retour de la fonction = Rendu / Affichage des données
   // Utilise la syntaxe JSX pour décrire l'aspect visuel du composant :
   return (
-    <div className='border border-blue-600 m-5 p-4 text-center'>
+    <div className='m-5 p-4 text-center'>
       {/* Utilisation du composant Link pour créer un lien vers la page spécifique du produit en utilisant l'_id du produit dans l'URL : */}
       <Link href={`/${product._id}`}>  
         <div>
