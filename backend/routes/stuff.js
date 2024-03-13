@@ -1,7 +1,7 @@
 const express = require('express');
+const auth = require('../middleware/auth');
 const router = express.Router();
 
-// const Thing = require('../models/thing');
 const stuffCtrl = require('../controllers/stuff')
 
 router.use((req, res, next) => {
@@ -11,10 +11,16 @@ router.use((req, res, next) => {
     next();
   });
   
-  router.post('/', stuffCtrl.createThing);
-  router.put('/:id', stuffCtrl.modifyThing);
-  router.delete('/:id', stuffCtrl.deleteThing);
-  router.get('/:id', stuffCtrl.getOneThing);
-  router.get('/', stuffCtrl.getAllThings);
+  // router.post('/', auth, stuffCtrl.createThing);
+  // router.put('/:id', auth, stuffCtrl.modifyThing);
+  // router.delete('/:id', auth, stuffCtrl.deleteThing);
+  // router.get('/:id', auth, stuffCtrl.getOneThing);
+  // router.get('/', auth, stuffCtrl.getAllThings);
+
+  router.post('/', auth, stuffCtrl.createThing);
+  router.put('/:id', auth, stuffCtrl.modifyThing);
+  router.delete('/:id', auth, stuffCtrl.deleteThing);
+  router.get('/:id', stuffCtrl.getOneThing, auth,);
+  router.get('/', stuffCtrl.getAllThings, auth,);
 
   module.exports = router;
