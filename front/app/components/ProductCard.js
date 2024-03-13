@@ -16,21 +16,26 @@ const ProductCard = ({ product }) => {
   // Retour de la fonction = Rendu / Affichage des données
   // Utilise la syntaxe JSX pour décrire l'aspect visuel du composant :
   return (
-    <div className='m-5 p-4 text-center'>
+    <div className='grid grid-cols-1 m-5 p-4 text-center'>
       {/* Utilisation du composant Link pour créer un lien vers la page spécifique du produit en utilisant l'_id du produit dans l'URL : */}
       <Link href={`/${product._id}`}>
         <div>
-          <Image
-            src={product.imageUrl}
-            alt={product.title}
-            width={220}
-            height={220}
-          />
+          <div className="flex justify-center items-center m-5">
+            <Image
+              src={product.imageUrl}
+              alt={product.title}
+              width={220}
+              height={220}
+              className="max-w-full max-h-full"
+            />
+          </div> 
           <h3 className='font-bold'>{product.title}</h3>
         </div>
       </Link>
-      <p>{product.price} €</p>
-      <BuyButton />
+      <p className="flex justify-center items-center h-12">{product.price} €</p>
+      <div className="flex justify-center items-center"> 
+        <BuyButton />
+      </div>
     </div>
   );
 }
