@@ -1,73 +1,39 @@
-"use client"
+/*  TEMPLATE ENCART PRODUIT
+      => Encart cliquable avec quelques infos du produit : 
+         photo principale + nom/type de meuble + prix + bouton d'achat 
+      => Sera affiché dans la grille de meubles sur la page d'accueil  */
 
-// On importe depuis React les hooks 'useState' et 'useEffect' (= fonctions spéciales fournies par React): 
-// - useState utilisé pour gérer l'état local d'un composant fonctionnel
-// - useEffect utilisé pour effectuer des opérations après le rendu initial du composant ou après chaque mise à jour (= lorsque le composant est monté)
-import { useState, useEffect} from 'react'
-
-import Image from "next/image"
-import BuyButton from "./BuyButton"
-
-
-// On définit un composant fonctionnel nommé 'ProductCard'
-// = Carte du produit à afficher sur la page d'accueil 
-// = encart avec photo principale + type de meuble + prix
-
-const ProductCard = () => {
-    // On initialise 2 états locaux 'data' et 'loading' à l'aide du hook useState : 
-    const [data, setData] = useState(null) // data stockera les données récupérées
-    const [loading, setLoading] = useState(true) // loading indiquera si les données sont en cours de chargement (valeur par défaut = true)
-  
-    useEffect(() => {
-      // Lorsque le composant sera monté => interroger l'API et récupérer des données (=> fonction asynchrone) :   
-      const fetchData = async() => {
-        try {
-          const response = await fetch('http://localhost:3000/api/stuff/')
-          if(!response.ok){ 
-            throw new Error('Failed to fetch data');
-          }
-          const responseData = await response.json();
-          setData(responseData); // on utilise 'setData' pour mettre à jour l'état 'data' avec les données récupérées depuis l'API
-          setLoading(false); // on utilise 'setLoading' pour mettre à jour l'état 'loading' à 'false' = les données ont été chargées avec succès => on n'est plus en mode chargement
-        } catch(error) {
-           console.log(error)
-           setLoading(false)
-        }
-      }
-  
-      fetchData()
-      
-    }, [])
+// Import des modules nécessaires depuis React et Next.js
+import React from 'react'; // Import de React (facultatif)
+import Link from 'next/link'; // Import du composant Link de Next.js pour créer des liens
+import Image from "next/image" // Import du composant Image de Next.js pour l'affichage d'images optimisées
+import BuyButton from "./BuyButton" // Import du composant BuyButton depuis un fichier local
 
 
-  // Affichage des données :
-  // Lorsque les données auront fini de charger, on effectuera un .map sur 'data' pour afficher chaque élément de la liste.
-  // Chaque produit sera enveloppé dans un élément <li> avec une clé unique 'key' basée sur l'ID de l'élément 
+// Définition du composant fonctionnel ProductCard avec une prop nommée 'product' :
+const ProductCard = ({ product }) => {
+
+  // Retour de la fonction = Rendu / Affichage des données
+  // Utilise la syntaxe JSX pour décrire l'aspect visuel du composant :
   return (
-    <div> 
-        {loading ? ( 
-            <p>Chargement...</p>
-        ) : (
-            <ul className='border border-red-600 grid grid-cols-3 p-2'>         
-                {data &&
-                    data.map(item => (
-                        <li key={item._id} className='border border-blue-600 m-2 text-center'>
-                            <Image 
-                              src={item.imageUrl} 
-                              alt={item.title}
-                              width={200}
-                              height={200}
-                            />
-                            <h2 className='font-bold'>{item.title}</h2>
-                            <p>{item.price} €</p>
-                            <BuyButton />                     
-                        </li>
-                    ))
-                }        
-            </ul>
-        )}
+    <div className='border border-blue-600 m-5 p-4 text-center'>
+      {/* Utilisation du composant Link pour créer un lien vers la page spécifique du produit en utilisant l'_id du produit dans l'URL : */}
+      <Link href={`/${product._id}`}>  
+        <div>
+          <Image 
+            src={product.imageUrl} 
+            alt={product.title} 
+            width={220} 
+            height={220} 
+          />
+          <h3 className='font-bold'>{product.title}</h3>
+        </div>
+      </Link>
+      <p>{product.price} €</p>
+      <BuyButton />
     </div>
-  )
+  );
 }
 
-export default ProductCard
+// Export du composant ProductCard pour pouvoir le réutiliser ailleurs dans le projet
+export default ProductCard;

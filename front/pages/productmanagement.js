@@ -5,15 +5,15 @@ import ProductsManagement from '../app/components/ProductsManagement';
 import Footer from '../app/components/Footer';
 import '../app/globals.css';
 
-function login() {
+function management() {
     return (
         <>
             <Header />
             <Navbar />
-            <h2>Gestion des Produits</h2>
+            <h2 className='text-center m-2'>Gestion des Produits</h2>
             <ProductsManagement />
             <Footer />
         </>)
 }
 
-export default login;
+export default management;
